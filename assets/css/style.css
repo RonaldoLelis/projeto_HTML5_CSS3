@@ -1,0 +1,81 @@
+body {
+  background-color: #43bfcf;
+}
+.navbar-brand img{
+	width: 200px;
+}
+.margin{
+	margin-top: 40px ;
+}
+.foto{
+	float: right;
+	align-items: baseline;
+}
+@media(max-width: 1000px){
+	.foto{
+		display: none;
+	}
+}
+@media (min-width: 800px){
+	.foto{
+		display: block;
+	}
+}
+.foto img{
+	width: 300px;
+}
+.banner{
+	width: 100%;
+	background-color: #347aba;
+}
+.banneresquerda{
+	float: left;
+	margin-top: 20px;	
+}
+.bannerdireita{
+	float: right;	
+}
+.frase1{
+	font-family: arial bold;
+	color: #ffffff;
+	margin: 20px;	
+}
+.frase2{
+	font-family: arial bold;
+	color: #ffffff;
+	margin: 20px;
+}
+#clientes img{
+	width: 100%;
+}
+p{
+	text-align: justify;
+}
+h4{
+	text-align: center;
+	margin-top: 7px;
+}
+.card{
+	padding: 5px;
+}
+.promocoes{
+	width: 100%;
+	height: 100%;
+	border: solid 2px;
+	border-radius: 5px;
+	border-color: #e8f0e8;
+	padding: 15px;
+}
+.sobrenos{
+	width: 100%;
+	height: 100%;
+	border: solid 2px;
+	border-radius: 5px;
+	border-color: #e8f0e8;
+	padding: 15px;
+}
+.footer{
+	background-color: #0000DD;
+	color: #FFF;
+	bottom: 0px;
+}
