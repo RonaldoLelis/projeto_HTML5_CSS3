@@ -6,6 +6,7 @@
 	<title>Curso FuturoTech-DIO</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,12 @@
 						<h2>A Melhor Gráfica da Região!<h2>
 					</div>
 					<div class="frase2">
-						<h4>E nossa novidade é que você mesmo pode calcular seu orçamento!</h4>
+						<h4>Temos uma variedade de produtos!</br>
+							e nosso diferencial é que:</br>
+							Você mesmo pode fazer</br>
+							o orçamento do seu Banner!</h4>
+						<button type="button" value="Mostrar" onclick="mostrar();"
+							class="btn btn-warning">Orçamento</button>
 					</div>
 				</div>
 			</div>
@@ -56,7 +62,81 @@
 			</div>
 		</div>
 	</div>
+	<div id="orcamento" style="display: none;" class="container">
+		<form>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputName">Nome</label>
+					<input type="name" class="form-control" id="inputName" placeholder="Nome">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputEmail4">Email</label>
+					<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputPhone">Telefone</label>
+					<input type="phone" class="form-control" id="inputPhone" placeholder="Telefone">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputMedida1">Largura</label>
+					<input type="number" min="0.01" step="0.01" class="form-control" id="inputMedida1"
+						placeholder="Insira a largura do banner , usando o . (ex.: 1.25)">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputMedida2">Altura</label>
+					<input type="number" min="0.01" step="0.01" class="form-control" id="inputMedida2"
+						placeholder="Insira a altura do banner, usando o . (ex.: 3.25)">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputAcabamento">Acabamento</label>
+					<select id="acab" class="custom-select custom-select-md mb-3">
+						<option selected>Selecione o acabamento</option>
+						<option value="Bastão e Cordinha">Bastão e Cordinha</option>
+						<option value="Ilhós em Volta">Ilhós em volta</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-12">
+					<label for="inputMaterial">Material</label>
+					<select id="material" class="custom-select custom-select-md mb-3">
+						<option selected>Selecione o tipo de material</option>
+						<option value="Lona Fosca">Lona Fosca</option>
+						<option value="Lona Brilho">Lona Brilho</option>
+					</select>
+				</div>
+			</div>
+			<button type="button" value="Calcular" onclick="pegaValor();" class="btn btn-primary">Calcular</button>
+		</form>
 
+	</div>
+	<div id="result" style="display: none;" class="container bg-info">
+		<div class="row">
+			<main role="main" class="container">
+				<div class="d-flex align-items-center p-3 mb-3 text-white-50 bg-purple rounded shadow-sm">
+					<img class="mr-3" src="images/logo.png" alt="" width="120" height="55">
+					<div class="lh-100">
+						<h6 class="mb-0 text-white lh-100">Orçamento N.o 1302</h6>
+						<small>contato: 12 98888-8888</small>
+					</div>
+				</div>
+
+				<div class="my-3 p-3 bg-white rounded shadow-sm">
+					<h6 class="border-bottom border-gray pb-2 mb-0"></h6>
+					<div class="media text-muted pt-3">
+						<p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+							<strong class="d-block text-gray-dark"></strong>
+
+						<div id="ficha" class="container">
+
+						</div>
+					</div>
+					</p>
+			</main>
+		</div>
+	</div>
 	<div class="container margin">
 		<section id="servicos">
 			<h3 class="text-center">Nossos Seviços:</h3>
@@ -219,6 +299,8 @@
 	<div class="footer margin">
 		<p class="text-center">Ronaldo de Lelis - Curso Novo Futuro Tech 2020 ₢lelisdesigner</p>
 	</div>
+
+
 </body>
 
 </html>

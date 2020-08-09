@@ -38,12 +38,25 @@ body {
 .frase1{
 	font-family: arial bold;
 	color: #ffffff;
-	margin: 20px;	
+	margin: 15px;	
 }
 .frase2{
 	font-family: arial bold;
-	color: #ffffff;
-	margin: 20px;
+	color: #91f3ee;
+	margin: 15px;
+}
+#orcamento{
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 12px;
+	width: 90%;
+	background-color: rgb(158, 238, 211);
+}
+#result{	
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 12px;
+	width: 90%;
 }
 #clientes img{
 	width: 100%;
